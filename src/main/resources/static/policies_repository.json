@@ -1,0 +1,51 @@
+{
+ "core":{
+
+ "availability": 99
+
+ ,
+ "specific":
+ {
+ "tenant1_Id": [
+ {
+ "authentication":[
+ {
+ "annotateTo":"componentRef",
+ "variant" : "oauth2Token"
+ }
+ ],
+"responseTime": "500ms"
+ }
+ ],
+ "tenant2_Id":[
+ {
+ "authentication":[
+ {
+ "annotateTo":"componentRef",
+ "variant" : "credentials"
+ }
+ ],
+"accessControl":[
+ {
+ "annotateTo":"componentRef",
+ "variant" : "role-basedAC",
+ "role": "admin"
+ }
+ ],
+"responseTime": "400ms"
+ } 
+ ],
+ "tenant3_Id":[
+ {
+ "authentication":[
+ {
+ "annotateTo":"componentRef",
+ "variant" : "credentials"
+ }
+ ],
+"responseTime": "300ms"
+ }
+ ]
+ }
+ }
+}
